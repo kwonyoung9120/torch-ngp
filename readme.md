@@ -1,7 +1,7 @@
 # torch-ngp
-
-Original repository : https://github.com/ashawkey/torch-ngp
 -------
+Original repository : https://github.com/ashawkey/torch-ngp
+
 For CSED703F students 
 
 This is the part of the Programming Assignment 1 of CSED703F class.
@@ -10,21 +10,23 @@ As you get the pose between two images by essential matrix, we can render NeRF w
 
 0. Install the pre-requested library. Check the original README below.
 
-1. Download the datasets from follow link to `./data` :
+1. Download the [datasets](https://drive.google.com/drive/folders/1hTPmNM-GseMUm4tPgsSaHSyHCnp4Z-5J?usp=sharing) to `./data` (-> `./data/horns`):
 
 2. To train torch-ngp, you should fill the obtained transformation matrix in `./data/horns/transform_test.json`
 
-The given images are `./data/horns/images/08.jpg` and `./data/horns/images/56.ipg`, so you should fill the transformation matrix in `data/horns/transforms_test.json`
-
-We give the transformation matrix of `./data/horns/images/56.jpg`, so you should calculate the transformation matrix of `./data/horns/images/08.jpg` with obtained transformation matrix.
+  The given images are `./data/horns/images/08.jpg` and `./data/horns/images/56.ipg`, so you should fill the obtained transformation matrix in the part of `images/08.jpg` and `images/56.jpg` in `data/horns/transforms_test.json`(L41, L215). Initially, the transformation matrices are set as identity.
 
 3. Run torch-ngp! And pick the best visualized result The command is 
-'''
-python main_nerf.py data/horns --workspace your_workspace -O (-gui)
-'''
+  ```
+  python main_nerf.py data/horns --workspace your_workspace -O (-gui)
+  ```
 as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.  
 
-Torch-ngp also provide the test image results in `./your_workspace/results/`. 
+4. Describe the results on your document with the images in `./your_workspace/validation/` or the mesh(NeRF only, not avalible for TensorRF) `./your_workspace/meshes/`.
+
+If you have any question about the assignment, feel free to ask me on email. 
+
+Teaching Assistent, Kwonyoung Ryu
 
 -------
 
