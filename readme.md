@@ -1,5 +1,33 @@
 # torch-ngp
 
+Original repository : https://github.com/ashawkey/torch-ngp
+-------
+For CSED703F students 
+
+This is the part of the Programming Assignment 1 of CSED703F class.
+
+As you get the pose between two images by essential matrix, we can render NeRF with instant-ngp! 
+
+0. Install the pre-requested library. Check the original README below.
+
+1. Download the datasets from follow link to `./data` :
+
+2. To train torch-ngp, you should fill the obtained transformation matrix in `./data/horns/transform_test.json`
+
+The given images are `./data/horns/images/08.jpg` and `./data/horns/images/56.ipg`, so you should fill the transformation matrix in `data/horns/transforms_test.json`
+
+We give the transformation matrix of `./data/horns/images/56.jpg`, so you should calculate the transformation matrix of `./data/horns/images/08.jpg` with obtained transformation matrix.
+
+3. Run torch-ngp! And pick the best visualized result The command is 
+'''
+python main_nerf.py data/horns --workspace your_workspace -O (-gui)
+'''
+as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.  
+
+Torch-ngp also provide the test image results in `./your_workspace/results/`. 
+
+-------
+
 This repository contains:
 * A pytorch implementation of the SDF and NeRF part (grid encoder, density grid ray sampler) in [instant-ngp](https://github.com/NVlabs/instant-ngp), as described in [_Instant Neural Graphics Primitives with a Multiresolution Hash Encoding_](https://nvlabs.github.io/instant-ngp/assets/mueller2022instant.pdf).
 * A pytorch implementation of [TensoRF](https://github.com/apchenstu/TensoRF), as described in [_TensoRF: Tensorial Radiance Fields_](https://arxiv.org/abs/2203.09517), adapted to instant-ngp's NeRF framework.
