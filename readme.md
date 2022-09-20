@@ -15,7 +15,7 @@ As you get the pose between two images by essential matrix, we can render NeRF w
    conda activate torch-ngp
    ```
    
-1. Download the [dataset](https://drive.google.com/drive/folders/1h2nmBYdwmCdEXbKRotKhsOzZljsIoOw3?usp=sharing)  to `./data` (-> `./data/dataset`). These datasets are already processed, so you don't have to change the structure. 
+1. Download the [dataset](https://drive.google.com/drive/folders/1h2nmBYdwmCdEXbKRotKhsOzZljsIoOw3?usp=sharing) to `./data` (`mkdir data` -> `./data/dataset`). These datasets are already processed, so you don't have to change the structure. 
 
 2. Run torch-ngp! And pick the best visualized result The command is 
   ```
