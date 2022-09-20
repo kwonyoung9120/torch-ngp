@@ -6,7 +6,7 @@ For CSED703F : AI topics : 3D vision students
 
 This is the final part of the Programming Assignment 1 of CSED703F class.
 
-As you get the pose between two images by essential matrix, we can render NeRF with instant-ngp! 
+As you get the pose between two images by essential matrix, we can render NeRF with torch-ngp! 
 
 0. First, download this git repository and then install the pre-requested library. The command is 
    ```
@@ -21,7 +21,7 @@ As you get the pose between two images by essential matrix, we can render NeRF w
   ```
   python main_nerf.py data/dataset --workspace your_workspace -O (-gui)
   ```
-as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.(but it requires more than 12G in GPU.)
+   as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.(but it requires more than 12G in GPU.)
 
 3. Now let's try torch-ngp with the obtained transformation matrix. In the dataset, we provide the transformation matricies for train/val/test split. You can find the transformation matrices are provided in "transform matrix" item in `.json`files. 
 
@@ -29,11 +29,13 @@ as said below. You can change the options or try TensoRF(python main_tensoRF.py)
 
    2. Change the transformation matrix with your results in json files. And run torch-ngp with your poses. 
 
-   For your information, the stereo images that we provide were `08.jpg` and `16.jpg` in the dataset. Please check the split infomations from `transform_[train\val\test].json`.
+   For your information, the stereo images that we've provided were `08.jpg` and `16.jpg` in the dataset. Please check the split infomations from `transform_[train\val\test].json`.
 
 4. Describe the differences on your document with the images in `./your_workspace/validation/` or the mesh(NeRF only, not avalible for TensorRF) `./your_workspace/meshes/`.
 
-If you have any question about the assignment, feel free to ask me on email(rky912@postech.ac.kr). 
+If you want more options to train NeRF, please check the original README below.
+
+Also, if you have any question about the assignment, feel free to ask me on email(rky912@postech.ac.kr). 
 
 Best regards, 
 
