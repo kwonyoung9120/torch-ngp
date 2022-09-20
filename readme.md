@@ -36,6 +36,7 @@ as said below. You can change the options or try TensoRF(python main_tensoRF.py)
 If you have any question about the assignment, feel free to ask me on email(rky912@postech.ac.kr). 
 
 Best regards, 
+
 Teaching Assistent, Kwonyoung Ryu
 
 -------
