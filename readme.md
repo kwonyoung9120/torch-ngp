@@ -1,4 +1,4 @@
-# torch-ngp
+# torch-ngp / CSED703F_Programming_Assignment_1
 -------
 Original repository : https://github.com/ashawkey/torch-ngp
 
