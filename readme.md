@@ -2,7 +2,7 @@
 -------
 Original repository : https://github.com/ashawkey/torch-ngp
 
-For CSED703F : AI topics : 3D vision students 
+For CSED703F : AI topics - 3D vision students 
 
 This is the final part of the Programming Assignment 1 of CSED703F class.
 
