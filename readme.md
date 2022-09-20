@@ -2,30 +2,40 @@
 -------
 Original repository : https://github.com/ashawkey/torch-ngp
 
-For CSED703F students 
+For CSED703F : AI topics : 3D vision students 
 
-This is the part of the Programming Assignment 1 of CSED703F class.
+This is the final part of the Programming Assignment 1 of CSED703F class.
 
 As you get the pose between two images by essential matrix, we can render NeRF with instant-ngp! 
 
-0. Install the pre-requested library. Check the original README below.
+0. First, download this git repository and then install the pre-requested library. The command is 
+   ```
+   git clone https://github.com/kwonyoung9120/torch-ngp
+   conda env create -f environment.yml
+   conda activate torch-ngp
+   ```
+   
+1. Download the [dataset](https://drive.google.com/drive/folders/1h2nmBYdwmCdEXbKRotKhsOzZljsIoOw3?usp=sharing)  to `./data` (-> `./data/dataset`). These datasets are already processed, so you don't have to change the structure. 
 
-1. Download the [datasets](https://drive.google.com/drive/folders/1hTPmNM-GseMUm4tPgsSaHSyHCnp4Z-5J?usp=sharing) to `./data` (-> `./data/horns`):
-
-2. To train torch-ngp, you should fill the obtained transformation matrix in `./data/horns/transform_test.json`
-
-  The given images are `./data/horns/images/08.jpg` and `./data/horns/images/56.ipg`, so you should fill the obtained transformation matrix in the part of `images/08.jpg` and `images/56.jpg` in `data/horns/transforms_test.json`(L41, L215). Initially, the transformation matrices are set as identity.
-
-3. Run torch-ngp! And pick the best visualized result The command is 
+2. Run torch-ngp! And pick the best visualized result The command is 
   ```
-  python main_nerf.py data/horns --workspace your_workspace -O (-gui)
+  python main_nerf.py data/dataset --workspace your_workspace -O (-gui)
   ```
-as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.  
+as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.(but it requires more than 12G in GPU.)
 
-4. Describe the results on your document with the images in `./your_workspace/validation/` or the mesh(NeRF only, not avalible for TensorRF) `./your_workspace/meshes/`.
+3. Now let's try torch-ngp with the obtained transformation matrix. In the dataset, we provide the transformation matricies for train/val/test split. You can find the transformation matrices are provided in "transform matrix" item in `.json`files. 
 
-If you have any question about the assignment, feel free to ask me on email. 
+  3-1. Obtained the relative pose base on '08.jpg' transformation matrix. So you should obtain the other 34 poses with your code.(If thats too many, try many as you can, and clarity what images you obtain.) 
 
+  3-2. Change the transformation matrix with your results in json files. And run torch-ngp with your poses. 
+
+For your information, the stereo images that we provide were `08.jpg` and `16.jpg` in the dataset. Please check the split infomations from `transform_[train\val\test].json`.
+
+4. Describe the differences on your document with the images in `./your_workspace/validation/` or the mesh(NeRF only, not avalible for TensorRF) `./your_workspace/meshes/`.
+
+If you have any question about the assignment, feel free to ask me on email(rky912@postech.ac.kr). 
+
+Best regards, 
 Teaching Assistent, Kwonyoung Ryu
 
 -------
