@@ -2,7 +2,7 @@
 -------
 Original repository : https://github.com/ashawkey/torch-ngp
 
-For CSED703F : AI topics - 3D vision students 
+For CSED703F : Topics in AI - 3D vision students 
 
 This is the final part of the Programming Assignment 1 of CSED703F class.
 
@@ -25,7 +25,7 @@ As you get the pose between two images by essential matrix, we can render NeRF w
 
 3. Now let's try torch-ngp with the obtained transformation matrix. In the dataset, we provide the transformation matricies for train/val/test split. You can find the transformation matrices are provided in "transform matrix" item in `.json`files. 
 
-   1. Obtained the relative pose base on '08.jpg' transformation matrix. So you should obtain the other 34 poses with your code.(If thats too many, try many as you can, and clarify what images you've obtained.) 
+   1. Obtained the relative pose base on '08.jpg' transformation matrix. So you should obtain the other 34 poses with your code.(If thats too many, try many as you can, and clarify what images you've obtained.) Please attach the fixed three `.json` files with the document. 
 
    2. Change the transformation matrix with your results in json files. And run torch-ngp with your poses. 
 
@@ -33,7 +33,7 @@ As you get the pose between two images by essential matrix, we can render NeRF w
 
 4. Describe the differences on your document with the images in `./your_workspace/validation/` or the mesh(NeRF only, not avalible for TensorRF) `./your_workspace/meshes/`.
 
-If you want more options to train NeRF, please check the original README below.
+If you want more options to train NeRF, please check the original `readme.md` below.
 
 Also, if you have any question about the assignment, feel free to ask me on email(rky912@postech.ac.kr). 
 
