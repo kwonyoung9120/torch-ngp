@@ -21,7 +21,7 @@ As you get the pose between two images by essential matrix, we can render NeRF w
   ```
   python main_nerf.py data/dataset --workspace your_workspace -O (-gui)
   ```
-   as said below. You can change the options or try TensoRF(python main_tensoRF.py) for the dataset.(but it requires more than 12G in GPU.)
+   as said below. You can change the options or try TensoRF(`python main_tensoRF.py`) for the dataset.(but it requires more than 12G in GPU.)
 
 3. Now let's try torch-ngp with the obtained transformation matrix. In the dataset, we provide the transformation matricies for train/val/test split. You can find the transformation matrices are provided in "transform matrix" item in `.json`files. 
 
