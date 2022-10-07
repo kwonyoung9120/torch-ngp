@@ -29,7 +29,7 @@ As you get the pose between two images by essential matrix, we can render NeRF w
 
    2. Change the transformation matrix with your results in json files. And run torch-ngp with your poses. 
 
-   For your information, the stereo images that we've provided were `08.jpg` and `16.jpg` in the dataset. Please check the split infomations from `transform_[train\val\test].json`.
+   For your information, the stereo images that we've provided were `16.jpg` and `26.jpg` in the dataset. Please check the split infomations from `transform_[train\val\test].json`.
 
 4. Describe the differences on your document with the images in `./your_workspace/validation/` or the mesh(NeRF only, not avalible for TensorRF) `./your_workspace/meshes/`.
 
