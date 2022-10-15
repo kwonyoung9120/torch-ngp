@@ -25,9 +25,9 @@ As you get the pose between two images by essential matrix, we can render NeRF w
 
 3. Now let's try torch-ngp with the obtained transformation matrix. In the dataset, we provide the transformation matricies for train/val/test split. You can find the transformation matrices are provided in "transform matrix" item in `.json`files. 
 
-   1. Obtained the relative pose base on '08.jpg' transformation matrix. So you should obtain the other 34 poses with your code.(If thats too many, try many as you can, and clarify what images you've obtained.) Please attach the fixed three `.json` files with the document. 
+   1. Obtained the relative pose base on '16.jpg' transformation matrix. As test set provide 8 frames, you should obtain the other 7 poses with your code.(If thats too many, try many as you can, and clarify what images you've obtained.) #Note that obtained pose is relative pose of '26.jpg' from `16.jpg`. So you should calculate the pose by given original pose in 'test.json' file
 
-   2. Change the transformation matrix with your results in json files. And run torch-ngp with your poses. 
+   2. Change the transformation matrix with your results in json files. And run torch-ngp with your poses. Please attach the fixed test set `.json` files with the document.
 
    For your information, the stereo images that we've provided were `16.jpg` and `26.jpg` in the dataset. Please check the split infomations from `transform_[train\val\test].json`.
 
