@@ -42,7 +42,7 @@ Best regards,
 Teaching Assistent, Kwonyoung Ryu
 
 -------
-README FIXED : "As test set provide 8 frames, you should obtain the other 7 poses" -> "As test set provide 6 frames, you should obtain the other 5 poses"
+**README FIXED(10/20): "As test set provide 8 frames, you should obtain the other 7 poses.." -> "As test set provide 6 frames, you should obtain the other 5 poses.."**
 
 
 -------
